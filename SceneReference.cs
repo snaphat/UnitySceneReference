@@ -14,6 +14,12 @@ public class SceneReference : ScriptableObject
     public SceneAsset sceneAsset; // For storing a scene reference in the editor
 #endif
     public string cachedName; // For storing a cached scene name
+
+    // Returns the scene name
+    public string GetSceneName()
+    {
+        return cachedName;
+    }
 }
 
 #if UNITY_EDITOR
